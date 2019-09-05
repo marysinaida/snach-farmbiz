@@ -1,16 +1,76 @@
-html,body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: yellow;
-    color:teal;
-    padding:30px;
-    body:5px;
+body{
+  overflow-x:hidden;
+  width: 100%;
+  font-family: 'Trebuchet MS', sans-serif;
+  }
+  nav{
+    position: fixed;
+    right: 0;
+    width:100%;
+    background-color: #749635;
+  }
+  
+  
+  
+  #images{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around ;
+     padding: 10px;
+  }
+  .figure{
+    position: fixed;
+    top:130px;
+    bottom: 0;
+    right:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .history{
+    background-image:url("http://www.upagroorganic.com/image/img/Agriculture-Banner.jpg");
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+  }
+  .history-overlay{
+   background-color:rgba(0,0,0,0.4);
+   overflow: auto;
+  }
+
+h1,h2,h3,h4 {
+  text-align: center;
+  font-family: Arial;
+  font-style: bold;
 }
+.why{
+  font-family:Tahoma;
+  font-style: italic;
+}
+#why{
+  float:right;
+}
+.infor{
+  text-align: center;
+}
+
+.responsive{
+  height: auto;
+  width: 100%;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    
+  }
+  .pepper>table{
+    text-align: center;
   }
   
   li {
@@ -23,15 +83,45 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
+ol{
+  list-style-image: url('sqgreenyellow.gif');
+   list-style-position: outside;
+}
+ol li b{
+  background: #ffe5e5;
+  padding: 5px;
+  margin-left: 35px;
+  list-style-type: circle;
+}
   
   li a:hover {
     background-color: #111;
   }
-  table,th,td{
-      border:1px solid black;
-      border-collapse: collapse;
-      padding:15px;
+  
+  table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: black;
+  color: white
+}
+  .pepper{
+    text-align: center;
   }
     .fresh{
         float:right;
@@ -40,17 +130,65 @@ ul {
   i{
     padding: 20px;  
   }
-  footer{
+
+footer{
     text-align: center;
     clear: both;
-  }
-  
-  .history{
-    float: left;
-    width: 45%;
-  }
-
+}
   .fruit{
     border-top: teal;
     float: right;
   }
+  
+  .vegetable{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around ;
+    padding: 5px;
+  }
+  .green{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around ;
+    padding: 5px;
+  }
+  .pine{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around ;
+    padding: 5px;
+  }
+  .ruits{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around ;
+    padding: 5px;
+  }
+  .cereals{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around ;
+    padding: 5px;
+  }
+  .diary{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around ;
+    padding: 5px;
+  }
+  .sell{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-around ;
+    padding: 5px;
+    
+  }
+  
+  .overlay{
+    background-color: 0, 0, 0, 0.5;
+  }
+  
